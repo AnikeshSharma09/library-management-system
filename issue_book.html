@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Issue Book</h3>
+
+<p><strong>{{ book.title }}</strong> by {{ book.author }}</p>
+
+<form method="POST">
+    <div class="mb-3">
+        <input type="text" name="student" class="form-control" placeholder="Student Name" required>
+    </div>
+
+    <button class="btn btn-primary">Issue</button>
+</form>
+
+{% endblock %}
